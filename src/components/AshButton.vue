@@ -8,6 +8,7 @@
       disabled ? 'button-' + type + '--' + 'disabled' : '',
       round ? 'button-' + type + '--' + 'round' : ''
     ]"
+    @click="$emit('click')"
   >
     <slot />
   </button>
